@@ -5,6 +5,11 @@ function saveToLocalStorage(event){
     var email= event.target.emailID.value;
     localStorage.setItem('name' ,name);
     localStorage.setItem('email' ,email);
+    const obj ={
+        name,
+        email,
+    }
+    localStorage.setItem('userdetails' , JSON.stringify(obj));
   }
   
   
