@@ -8,34 +8,102 @@
 </head>
 <body>
     <script>
+    //THIS KEYWORD 
+    // house
 
-    /* let multiply = function (x,y){
-        console.log(x*y);
+    /* this.table='window table';
+    
+        
+        
+
+    
+    
+    
+    this.garage={
+        table : 'garage table'
+        
+        
+    }
+    
+
+    class createroom{
+            constructor(name){
+                this.table =`${name} table`
+            }
+            cleantable(soap){
+        console.log(`cleaning ${this.table} using ${soap}`);
+        }
+    }
+    
+
+   
+    
+    const jillsroom = new createroom('jill');
+    const charanroom = new createroom('charan');
+
+
+   
+
+
+    jillsroom.cleantable('some soap');
+    charanroom.cleantable('some soap'); */
+    
+    //////////////////////////////////////// FAT ARROW FUNCTION
+    "use strict";
+    /* var getA = function(a){
+        return a;
     } */
 
-    let multiply = function (x){
-        return function (y){
-            console.log(x*y);
+    /* let getA = a => a;
+
+    console.log(getA(1)); */
+
+    /* var a =4;
+    let square = () => { return  a *a};
+
+    console.log(square());
+ */
+/*  let mult = (a,b) => { return  a *b};
+
+console.log(mult(5,6)); */
+
+/* var x = function(){
+    this.val =1;
+    setTimeout(() =>{
+        this.val++;
+        console.log(this.val)
+    },1)
+};
+var xx=new x(); */
+/* var x =(...n) =>{
+    console.log(n[0])
+};
+x(1,2,3); */
+class student{
+    constructor(name, age , marks){
+        this.name = name;
+        this.age=age;
+        this.marks=marks;
+
+    }
+    setplacementage(minplacementage){
+        
+        return(minmarks) => {
+            
+            if(this.marks>minmarks && this.age>minplacementage){
+                console.log(this.name +" is ready for placements")
+            } else{
+                console.log(this.name +" is not ready for placements")
+            }
         }
-
+    }
 }
-    /* let multiplybytwo=multiply.bind(this,2);
-    multiplybytwo(5);
 
-    let multiplybythree=multiply.bind(this,3);
-    multiplybythree(5); */
+const charan =new student("charan",22,72);
+const lucky =new student("lucky",34,34);
 
-    let multiplybytwo=multiply(2);
-    multiplybytwo(5);
-
-    let multiplybythree=multiply(3);
-    multiplybythree(5);
-
-    
-    
-
-
-
+charan.setplacementage(18)(40);
+lucky.setplacementage(18)(40);
 
 
 
