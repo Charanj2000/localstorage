@@ -7,18 +7,19 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>EXPENSE TRACKER</h1>
     <form id="addform">
-    <label for="expence">Choose expenseamount:</label>
-    <input type="text" id="expence">
+    <label for="'expense">Choose expense amount:</label>
+    <input type="text" id="expence"><br>
     <label for="description">Choose description</label>
-    <input type="text" id="description">
+    <input type="text" id="description"><br>
     <label for="category">Choose a category:</label>
   <select id="category" name="category">
     <option value="movie">Movie</option>
     <option value="dinner">Dinner</option>
     <option value="fuel">Fuel</option>
     <option value="ticket">Ticket</option>
-  </select>
+  </select><br>
     <input type="submit" value="Add expences">
     <ul id="users"></ul>
 
@@ -26,7 +27,7 @@
 
 
 
-    <script>
+    <script >
         var Form=document.getElementById('addform')
 var exp=document.getElementById('expence');
 var desc=document.getElementById('description');
